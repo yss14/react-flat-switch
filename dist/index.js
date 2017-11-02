@@ -12,6 +12,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -147,16 +151,16 @@ var FlatSwitch = function (_React$Component) {
 }(_react2.default.Component);
 
 FlatSwitch.propTypes = {
-  enabled: _react2.default.PropTypes.bool.isRequired,
-  enableText: _react2.default.PropTypes.string,
-  disableText: _react2.default.PropTypes.string,
-  onSwitch: _react2.default.PropTypes.func,
-  hideBoxShadow: _react2.default.PropTypes.bool,
-  width: _react2.default.PropTypes.oneOfType(['string', 'number']),
-  height: _react2.default.PropTypes.oneOfType(['string', 'number']),
-  className: _react2.default.PropTypes.string,
-  enabledStyles: _react2.default.PropTypes.object,
-  disabledStyles: _react2.default.PropTypes.object
+  enabled: _propTypes2.default.bool.isRequired,
+  enableText: _propTypes2.default.string,
+  disableText: _propTypes2.default.string,
+  onSwitch: _propTypes2.default.func,
+  hideBoxShadow: _propTypes2.default.bool,
+  width: _propTypes2.default.oneOfType(['string', 'number']),
+  height: _propTypes2.default.oneOfType(['string', 'number']),
+  className: _propTypes2.default.string,
+  enabledStyles: _propTypes2.default.object,
+  disabledStyles: _propTypes2.default.object
 };
 
 FlatSwitch.defaultProps = {
